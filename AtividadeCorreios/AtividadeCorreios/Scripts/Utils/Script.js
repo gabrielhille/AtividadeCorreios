@@ -2,8 +2,8 @@
     $('input[name="BTN"]').click(function () {
 
         var codigo = $('input[name="codigo"]').val();
-        var valor = $('input[name="valor"]').val();
-        var prazoentrega = $('input[name="prazoentrega"]').val();
+        var senha = $('input[name="valor"]').val();
+        var servicos = $('input[name="prazoentrega"]').val();
         var cepori = $('input[name="cepori"]').val();
         var cepdes = $('input[name="cepdes"]').val();
         var peso = $('input[name="peso"]').val();
@@ -16,18 +16,15 @@
         var valordeclarado = $('input[name="valordeclarado"]').val();
         var avisorecebimento = $('input[name="avisorecebimento"]').val();
 
+        var urlMontada = "http://usysweb.com.br/api/correiosambev.php?" + "&nCdEmpresa=" + codigo + "&sDsSenha=" + senha + "&nCdServico=" + servicos +
+            "&sCepOrigem=" + cepori + "&sCepDestino=" + cepdes + "&nVlPeso=" + peso + "&nCdFormato=" + formato + "&nVlComprimento=" + comprimento + "&nVlAltura=" + altura +
+            "&nVlLargura=" + largura + "&nVlDiametro=" + diametro + "&sCdMaoPropria=" + maopropria + "&nVlValorDeclarado=" + valordeclarado + "&sCdAvisoRecebimento=" + avisorecebimento;
 
-        $.get("http://usysweb.com.br/api/correiosambev.php?" + codigo + valor + prazoentrega + cepori + cepdes + peso + comprimento + formato + altura + largura + diametro + maopropria + valordeclarado + avisorecebimento, function (data) {
-
-
-                  
-                  
+        $.get(urlMontada, function (tipo) {
+            alert("O preco desse pedido será :" + tipo.cServico.Valor);
         });       
     });           
-});               
-                  
-                  
-                  
+});                  
                   
                   
                   
