@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     $('input[name="BTN"]').click(function () {
-        $.getJSON("http://usysweb.com.br/api/correiosambev.php?nCdServico=04014", function (data) {
+        $.get("http://usysweb.com.br/api/correiosambev.php?nCdServico=04014", function (data) {
 
             $('input[name="codigo"]').val(data.codigo);
             $('input[name="valor"]').val(data.valor);
