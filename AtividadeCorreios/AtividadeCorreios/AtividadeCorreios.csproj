@@ -65,8 +65,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagens\687474703a2f2f7069736b656c2d696d6773746f72652d622e61707073706f742e636f6d2f696d672f64353830653936652d626438612d313165362d623135372d393934.gif" />
     <Content Include="Imagens\codigos-rastreamento-correios.jpg" />
     <Content Include="Index.html" />
+    <Content Include="obj\Debug\AtividadeCorreios.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\AtividadeCorreios.dll" />
+    <Content Include="obj\Debug\AtividadeCorreios.pdb" />
+    <Content Include="obj\style\style.css" />
     <Content Include="Scripts\inputmask\bindings\inputmask.binding.js" />
     <Content Include="Scripts\inputmask\dependencyLibs\inputmask.dependencyLib.jqlite.js" />
     <Content Include="Scripts\inputmask\dependencyLibs\inputmask.dependencyLib.jquery.js" />
@@ -94,6 +99,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="obj\Debug\AtividadeCorreios.csproj.CopyComplete" />
+    <Content Include="obj\Debug\AtividadeCorreios.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\AtividadeCorreios.csprojAssemblyReference.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\AtividadeCorreios.csproj.CoreCompileInputs.cache" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -104,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
