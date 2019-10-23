@@ -65,6 +65,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagens\codigos-rastreamento-correios.jpg" />
     <Content Include="Index.html" />
     <Content Include="Scripts\inputmask\bindings\inputmask.binding.js" />
     <Content Include="Scripts\inputmask\dependencyLibs\inputmask.dependencyLib.jqlite.js" />
@@ -86,7 +87,6 @@
     <Content Include="Scripts\inputmask\min\inputmask.min.js" />
     <Content Include="Scripts\inputmask\min\inputmask.numeric.extensions.min.js" />
     <Content Include="Scripts\inputmask\min\jquery.inputmask.min.js" />
-    <Content Include="Scripts\Utils\Script.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -103,7 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />
-    <Folder Include="Imagens\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
