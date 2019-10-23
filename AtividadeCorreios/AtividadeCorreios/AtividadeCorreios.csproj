@@ -87,6 +87,7 @@
     <Content Include="Scripts\inputmask\min\inputmask.min.js" />
     <Content Include="Scripts\inputmask\min\inputmask.numeric.extensions.min.js" />
     <Content Include="Scripts\inputmask\min\jquery.inputmask.min.js" />
+    <Content Include="Scripts\Utils\Script.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
