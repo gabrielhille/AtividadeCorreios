@@ -9,7 +9,7 @@
             $('input[name="uf"]').val(data.uf);
             $('input[name="unidade"]').val(data.unidade);
             $('input[name="ibge"]').val(data.ibge);
-            $('input[name="gia"]').val(data.gia)
+            $('input[name="gia"]').val(data.gia);
         });
     });
 });
