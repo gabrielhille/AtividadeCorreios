@@ -3,7 +3,7 @@
         var cep = $('input[name="cep"]').val();
 
         
-        $.get("http://usysweb.com.br/api/correiosambev.php?" + cep + "/json/", function (data) {
+        $.get("http://usysweb.com.br/api/correiosambev.php?nCdServico=04014", function (data) {
 
             if (data.erro) {
                 alert("Cep inválido!");
