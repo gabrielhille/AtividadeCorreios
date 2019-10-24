@@ -23,7 +23,7 @@
 
         $.getJSON(urlMontada, function (tipo) {
             
-            alert("O preco desse pedido será:" + tipo.cServico.Valor);
+            alert("O preco desse pedido será: R$ " + tipo.cServico.Valor);
         });       
     });           
 });                  
