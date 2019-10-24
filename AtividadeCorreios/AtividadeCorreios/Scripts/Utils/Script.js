@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    $('input[ ID="Submit1"]').click(function () {
+    $('input[id=Submit1]').click(function () {
 
         var codigo = $('input[name="codigo"]').val();
         var senha = ``;
@@ -16,7 +16,7 @@
         var valordeclarado = $('input[name="valordeclarado"]').val();
         var avisorecebimento = 'S';
 
-        var urlMontada = 'https://usysweb.com.br/api/correiosambev.php?' + "&nCdEmpresa=" + codigo + "&sDsSenha=" + senha + "&nCdServico=" + servicos +
+        var urlMontada = "http://usysweb.com.br/api/correiosambev.php?" + "&nCdEmpresa=" + codigo + "&sDsSenha=" + senha + "&nCdServico=" + servicos +
             "&sCepOrigem=" + cepori + "&sCepDestino=" + cepdes + "&nVlPeso=" + peso + "&nCdFormato=" + formato + "&nVlComprimento=" + comprimento + "&nVlAltura=" + altura +
             "&nVlLargura=" + largura + "&nVlDiametro=" + diametro + "&sCdMaoPropria=" + maopropria + "&nVlValorDeclarado=" + valordeclarado + "&sCdAvisoRecebimento=" + avisorecebimento;
 
