@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    $('input[name="BTN"]').click(function () {
+    $('input[id=Submit1]').click(function () {
 
         var codigo = $('input[name="codigo"]').val();
         var senha = $('input[name="valor"]').val();
@@ -16,12 +16,16 @@
         var valordeclarado = $('input[name="valordeclarado"]').val();
         var avisorecebimento = $('input[name="avisorecebimento"]').val();
 
-        var urlMontada = "http://usysweb.com.br/api/correiosambev.php?" + "&nCdEmpresa=" + codigo + "&sDsSenha=" + senha + "&nCdServico=" + servicos +
+        var urlMontada = 'http://usysweb.com.br/api/correiosambev.php?' + "&nCdEmpresa=" + codigo + "&sDsSenha=" + senha + "&nCdServico=" + servicos +
             "&sCepOrigem=" + cepori + "&sCepDestino=" + cepdes + "&nVlPeso=" + peso + "&nCdFormato=" + formato + "&nVlComprimento=" + comprimento + "&nVlAltura=" + altura +
             "&nVlLargura=" + largura + "&nVlDiametro=" + diametro + "&sCdMaoPropria=" + maopropria + "&nVlValorDeclarado=" + valordeclarado + "&sCdAvisoRecebimento=" + avisorecebimento;
 
         $.get(urlMontada, function (tipo) {
-            alert("O preco desse pedido será :" + tipo.cServico.Valor);
+            alert("O preco desse pedido será:" +sser);
+
+
+
+
         });       
     });           
 });                  
