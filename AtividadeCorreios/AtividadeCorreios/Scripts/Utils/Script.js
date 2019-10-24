@@ -26,8 +26,6 @@
             alert("O preco desse pedido será: R$ " + tipo.cServico.Valor);
         });       
     });           
-});                  
-                  
-                  
+});                         
                   
                   
