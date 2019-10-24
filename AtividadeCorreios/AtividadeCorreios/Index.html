@@ -3,9 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title>Correios</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="style/style.css" rel="stylesheet" />
 </head>
 <body class="body-custom">
     <br>
@@ -15,17 +14,17 @@
     <div class="container-fluid h-100">
         <div class=" row justify-content-md-center">
             <span style="width:130px; ">Codigo:</span>
-            <span><input type="text" name="codigo" value=""></span>
+            <span><input type="text" name="codigo" placeholder="Codigo " autofocus></span>
         </div>
 
         <div class=" row justify-content-md-center">
-            <span style="width:130px;">Valor:</span>
-            <span><input type="number" name="valor" value=""></span>
+            <span style="width:130px;">Senha:</span>
+            <span><input type="password" name="senha" value=""></span>
         </div>
 
         <div class=" row justify-content-md-center">
-            <span style="width:130px;">Prazo Entrega:</span>
-            <span><input type="number" name="prazoentrega" value=""></span>
+            <span style="width:130px;">Serviços:</span>
+            <span><input type="number" name="servicos" value=""></span>
         </div>
 
         <div class=" row justify-content-md-center">
@@ -104,5 +103,11 @@
         </div>
 
     </div>
+
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/inputmask/min/inputmask.min.js"></script>
+    <script src="Scripts/Utils/Script.js"></script>
+
 </body>
 </html>
