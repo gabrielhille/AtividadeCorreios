@@ -16,7 +16,7 @@
         var valordeclarado = $('input[name="valordeclarado"]').val();
         var avisorecebimento = 'S';
 
-        var urlMontada = "http://usysweb.com.br/api/correiosambev.php?giomar=true" + "&nCdEmpresa=" + codigo + "&sDsSenha=" + senha + "&nCdServico=" + servicos +
+        var urlMontada = "http://usysweb.com.br/api/correiosambev.php?" + "&nCdEmpresa=" + codigo + "&sDsSenha=" + senha + "&nCdServico=" + servicos +
             "&sCepOrigem=" + cepori + "&sCepDestino=" + cepdes + "&nVlPeso=" + peso + "&nCdFormato=" + formato + "&nVlComprimento=" + comprimento + "&nVlAltura=" + altura +
             "&nVlLargura=" + largura + "&nVlDiametro=" + diametro + "&sCdMaoPropria=" + maopropria + "&nVlValorDeclarado=" + valordeclarado + "&sCdAvisoRecebimento=" + avisorecebimento;
 
