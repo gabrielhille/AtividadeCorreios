@@ -25,6 +25,7 @@
             
             alert("O preço desse pedido será: R$ " + tipo.cServico.Valor +
                 ", prazo de entrga é de " + tipo.cServico.PrazoEntrega + "Dias"
+
             );
             
         });       
