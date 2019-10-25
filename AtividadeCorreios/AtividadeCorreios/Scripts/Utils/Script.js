@@ -3,7 +3,7 @@
 
         var codigo = $('input[name="codigo"]').val();
         var senha = ``;
-        var servicos = $('input[name="servicos"]').val();
+        var servicos = $('select[name="servicos"]').val();
         var cepori = $('input[name="cepori"]').val();
         var cepdes = $('input[name="cepdes"]').val();
         var peso = $('input[name="peso"]').val();
@@ -23,7 +23,10 @@
 
         $.getJSON(urlMontada, function (tipo) {
             
-            alert("O preco desse pedido será: R$ " + tipo.cServico.Valor);
+            alert("O preço desse pedido será: R$ " + tipo.cServico.Valor +
+                ", prazo de entrga é de " + tipo.cServico.PrazoEntrega + "Dias"
+            );
+            
         });       
     });           
 });                         
